@@ -21,6 +21,7 @@
     />
   </head>
   <body>
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <button
@@ -40,20 +41,21 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
+    <!--End Navbar-->
     <section class="all-content">
       <div class="container banner-info">
         <h1 class="mt-3">Front-end Developer</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <img src="/image/frank.png" alt="avatar" className="avatar-img" />
       </div>
-      <div class="container-fluid about my-3 py-5 text-center">
+      <div class="container-fluid about my-3 py-5 text-center" id="about">
         <h1 class="my-2">Let me tell you about myself</h1>
         <h2>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quos sed
@@ -63,7 +65,7 @@
       </div>
       <div class="container skills py-5 text-center">
         <h1 class="my-2">Languages I speak</h1>
-        <div class="row mt-5">
+        <div class="row mt-5 languages">
           <div class="col-md-4">
             <i class="fab fa-html5"></i>
             <h2 class="mt-3">HTML5</h2>
@@ -81,38 +83,95 @@
           </div>
         </div>
       </div>
-      <div class="container projects my-5 text-center">
-        <h1>My Projects</h1>
+      <div class="container projects my-5 text-center" id="projects">
+        <h1 class="my-2">My Projects</h1>
         <div class="row">
-          <div class="col-md-6">
-              <div class="hovereffect my-5" style="width: 450px;">
-                  <img class="img-responsive" src="image/dateu.png" alt="" style="width: 100%;">
-                  <div class="overlay">
-                     <h2>DateU</h2>
-                     <a class="info" href="#">Live demo</a>
-                  </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="hovereffect my-5">
+              <img
+                class="img-responsive"
+                src="image/dateu.png"
+                alt=""
+                style="width: 100%;"
+              />
+              <div class="overlay">
+                <h2>Website project from the university as a social network</h2>
+                <a class="info" href="http://date-u.herokuapp.com/"
+                  >Live demo</a
+                >
+                <a class="info ml-3" href="http://date-u.herokuapp.com/"
+                  >Github</a
+                >
               </div>
+            </div>
           </div>
-          <div class="col-md-6">
-              <div class="hovereffect my-5" style="width: 450px;">
-                  <img class="img-responsive" src="image/dateu.png" alt="" style="width: 100%;">
-                  <div class="overlay">
-                     <h2>DateU</h2>
-                     <a class="info" href="#">Live demo</a>
-                  </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="hovereffect my-5">
+              <img
+                class="img-responsive"
+                src="image/motion.png"
+                alt=""
+                style="width: 100%;"
+              />
+              <div class="overlay">
+                <h2>Full Motion website, native grid layout</h2>
+                <a class="info" href="#">Live demo</a>
+                <a class="info ml-3" href="http://date-u.herokuapp.com/"
+                  >Github</a
+                >
               </div>
+            </div>
           </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <div class="hovereffect my-5">
+                <img
+                  class="img-responsive"
+                  src="image/dateu.png"
+                  alt=""
+                  style="width: 100%;"
+                />
+                <div class="overlay">
+                  <h2>Website project from the university as a social network</h2>
+                  <a class="info" href="http://date-u.herokuapp.com/"
+                    >Live demo</a
+                  >
+                  <a class="info ml-3" href="http://date-u.herokuapp.com/"
+                    >Github</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="hovereffect my-5">
+                  <img
+                    class="img-responsive"
+                    src="image/dateu.png"
+                    alt=""
+                    style="width: 100%;"
+                  />
+                  <div class="overlay">
+                    <h2>Website project from the university as a social network</h2>
+                    <a class="info" href="http://date-u.herokuapp.com/"
+                      >Live demo</a
+                    >
+                    <a class="info ml-3" href="http://date-u.herokuapp.com/"
+                      >Github</a
+                    >
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
     </section>
-    <footer class="foot text-center">
-      <h1>Footer</h1>
-      <ul class="social">
-        <li><i class="fab fa-github"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
+    <footer class="foot text-center" id="contact">
+      <h1 class="my-3">Let's work together!</h1>
+      <button class="btn btn-outline-primary my-3">Contact me</button>
+      <ul class="social my-3">
+        <li><a href="/"class="icons"><i class="fab fa-github"></i></a></li>
+        <li><a href="/" class="icons"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="/" class="icons"><i class="far fa-envelope"></i></a></li>
       </ul>
-      <p>Copyright Francisco Molina 2019</p>
-
+      <p class="mt-3">© Francisco Molina 2019</p>
     </footer>
   </body>
   <!--Scripts-->
