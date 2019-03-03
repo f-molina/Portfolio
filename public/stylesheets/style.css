@@ -1,24 +1,42 @@
+.all-content h1, h2{
+  line-height: 1.5;
+}
+
 .nav-item a,
-h6 {
-  color: #8c43ff;
+.logo {
+  color: #fff;
+}
+
+.nav-item a:hover {
+  color: #ff69b4;
 }
 
 .banner-info h1,
 .skills h1,
-.projects h1 {
+.projects h1,
+.name {
   font-family: "Saira", sans-serif;
-  font-size: 5em;
   color: #293347;
   font-weight: bold;
+}
+
+.navi {
+  background: #1b242f;
+}
+
+.banner-info h1 {
+  color: black;
+  font-size: 3em;
 }
 
 .banner-info p,
 .about h1,
 h2,
 .foot,
-.overlay a {
-  font-family: "Jura", sans-serif;
-  font-size: 1.5em;
+.overlay a,
+.morek {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
 }
 
 .banner-info {
@@ -27,14 +45,15 @@ h2,
 }
 
 .banner-info img {
-  height: 250px;
-  padding-top: 3em;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
+  margin-top: 2em;
 }
 
 .about,
 .foot {
-  background: #8c43ff;
+  background: #1b242f;
   color: white;
 }
 
@@ -56,7 +75,8 @@ h2,
 
 .btn.btn-light.d-inline-block.d-lg-none.ml-auto {
   font-size: 2em;
-  color: #8c43ff;
+  color: white;
+  background: #1b242f;
 }
 
 .img-responsive,
@@ -64,12 +84,18 @@ h2,
   border-radius: 8px;
 }
 
+.projects,
+.skills {
+  margin-top: 7.2em;
+  margin-bottom: 7.2em;
+}
+
 .foot {
   padding: 15px 0;
 }
 
 .foot p {
-  font-size: 0.5em;
+  font-size: 0.6em;
 }
 
 ul.social li {
@@ -80,7 +106,7 @@ ul.social li {
 .icons {
   border: 2px solid white;
   border-radius: 100%;
-  font-size: 1.2em;
+  font-size: 1.8em;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -88,16 +114,58 @@ ul.social li {
   text-decoration: none;
 }
 
-.icons:hover, .btn-outline-primary:hover{
-  color: #8c43ff;
+.icons:hover,
+.btn-outline-primary:hover {
+  box-shadow: 0px 2px 20px 0px rgba(0, 255, 212, 0.5);
   background: white;
+  color: #1b242f;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
   color: white;
   border-color: white;
 }
 
+/*animations*/
+.first-lang i,
+h2 {
+  animation-delay: 0.3s;
+}
+
+.second-lang i,
+h2 {
+  animation-delay: 0.6s;
+}
+
+.third-lang i,
+h2 {
+  animation-delay: 0.9s;
+}
+
+.wow .info {
+  font-weight: bolder;
+}
+
+.first-lang h2,
+.second-lang h2,
+.third-lang h2,
+.morek {
+  color: #293347;
+  font-weight: 500;
+}
+
+@media (max-width: 769px) {
+  .about h2 {
+    padding: 0;
+    margin-top: 2em;
+  }
+  .test {
+    margin-bottom: 3em;
+  }
+  .imgcov img{
+    max-width: 100%;
+  }
+}
 
 /*hover image effects*/
 /*
